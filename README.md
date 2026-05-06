@@ -1,141 +1,146 @@
-# 🧠 Insurance Charges Prediction using Machine Learning
+# 🧠 Insurance Charges Prediction
 
-## 📌 Overview
+## 📌 Project Overview
 
-This project focuses on predicting medical insurance charges based on individual attributes such as age, BMI, smoking habits, and more.
-The goal is to analyze key factors influencing insurance costs and build a machine learning model to estimate charges accurately.
+This project predicts medical insurance charges based on user attributes such as age, BMI, smoking habits, and other personal factors.
+
+The goal is to analyze how different features influence insurance costs and build a machine learning model to estimate charges.
 
 ---
 
 ## 🎯 Problem Statement
 
-Insurance companies need reliable methods to estimate medical costs based on customer data.
-This project aims to develop a predictive model that helps understand how different features impact insurance charges.
+Insurance companies need accurate methods to estimate customer medical costs.
+This project aims to develop a predictive model using machine learning to estimate insurance charges based on customer data.
 
 ---
 
-## 📊 Dataset Features
+## 📊 Dataset Information
 
-The dataset contains the following attributes:
+The dataset contains 1338 records with the following features:
 
 * **Age** – Age of the individual
-* **Sex** – Gender (Male/Female)
+* **Sex** – Gender
 * **BMI** – Body Mass Index
 * **Children** – Number of dependents
-* **Smoker** – Smoking status (Yes/No)
+* **Smoker** – Smoking status
 * **Region** – Residential area
-* **Charges** – Medical insurance cost (Target Variable)
+* **Charges** – Insurance cost (Target variable)
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis
 
-Performed detailed analysis to understand patterns and relationships:
+Performed analysis to understand relationships between variables:
 
-* Distribution of age and BMI
-* Impact of smoking on insurance charges
-* Relationship between age and medical expenses
-* Visualization using Matplotlib and Seaborn
+* Age vs Charges
+* BMI vs Charges
+* Smoker vs Charges
+* Distribution of features
+
+### Key Insight:
+
+👉 Smokers have significantly higher insurance charges compared to non-smokers
 
 ---
 
 ## ⚙️ Data Preprocessing
 
-* Converted categorical variables into numerical format using **Label Encoding**
+* Converted categorical data into numerical format using Label Encoding
 * Checked for missing values (none found)
-* Prepared features and target variables
+* Selected features and target variable
 
 ---
 
-## 🤖 Machine Learning Model
+## 🤖 Model Building
 
-* **Algorithm Used:** Linear Regression
-* Split dataset into training and testing sets
-* Trained the model on training data
-* Predicted insurance charges on test data
+* Algorithm: **Linear Regression**
+* Data split: 80% training, 20% testing
+* Model trained on processed dataset
 
 ---
 
 ## 📈 Model Evaluation
 
-Performance metrics used:
+Metrics used:
 
-* **R² Score** – Measures model accuracy
-* **Mean Absolute Error (MAE)**
-* **Root Mean Squared Error (RMSE)**
+* R² Score
+* Mean Absolute Error (MAE)
+* Root Mean Squared Error (RMSE)
 
 ---
 
 ## 📉 Visualization
 
-* Scatter plots for feature relationships
-* Boxplots for categorical comparisons
+* Scatter plots for relationships
+* Boxplots for categorical comparison
 * Prediction line graph (Age vs Charges)
 
 ---
 
-## 🚀 Key Insights
+## 🚀 Results & Insights
 
-* Smoking significantly increases insurance charges
-* Age has a strong positive correlation with medical expenses
-* BMI moderately affects insurance cost
+* Smoking is the most influential factor on insurance cost
+* Age has a strong positive correlation with charges
+* BMI moderately affects charges
 * Linear Regression provides a good baseline model
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Programming Language:** Python
-* **Libraries:**
-
-  * Pandas
-  * NumPy
-  * Matplotlib
-  * Seaborn
-  * Scikit-learn
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── insurance.csv
-├── Insurance Charges Prediction Project.ipynb
-└── README.md
+Insurance-Charges-Prediction/
+│── insurance.csv
+│── Insurance Charges Prediction Project.ipynb
+│── README.md
 ```
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+2. Install dependencies:
+
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+3. Run the notebook
 
 ---
 
 ## 🔮 Future Improvements
 
-* Implement advanced models (Random Forest, Gradient Boosting)
-* Perform feature scaling and hyperparameter tuning
-* Deploy the model using Flask or Streamlit
+* Use advanced models (Random Forest, XGBoost)
+* Perform feature scaling
+* Hyperparameter tuning
+* Deploy using Flask or Streamlit
 
 ---
 
-## 📌 How to Run the Project
+## 🙌 Acknowledgement
 
-1. Clone the repository
-2. Install required libraries:
-
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
-   ```
-3. Run the Jupyter Notebook
+Dataset used for educational purposes.
 
 ---
 
-## 🙌 Acknowledgements
+## 📬 Connect with Me
 
-Dataset used for learning and educational purposes.
-
----
-
-## 📬 Contact
-
-If you have any suggestions or feedback, feel free to connect with me on LinkedIn!
+Feel free to connect with me on LinkedIn for feedback and collaboration.
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ If you like this project, give it a star!
